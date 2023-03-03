@@ -8,16 +8,14 @@ In this work, we present a Gaussian process that incorporates the symplectic geo
 This code is written in Python 3, and depends on PyTorch and torchdiffeq. Only the executable file is written in Ruby 3.
 
 ## Quick example
-- To obtain the datasets of several physical systems (Pendulum, Duffing Oscillator, Double Pendulum):
+- To obtain the datasets of several physical systems (Pendulum, Duffing Oscillator, Double Pendulum), please enter the following command in [data](data). 
 ```
 ruby run.rb
 ```
-in [data](data). 
-- Then, the command to reproduce our results is
+- Then, one can reproduce our results by the following command in [model](model).
 ```
 ruby run.rb
 ```
-in [model](model). 
 Results are stored in data/[system]/.
 
 ## Citations
