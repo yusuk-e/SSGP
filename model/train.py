@@ -78,7 +78,6 @@ def train():
         KL_x0 = model.KL_x0(batch_y0.squeeze())
         KL_w = model.KL_w()
         loss = neg_loglike + KL_x0 + KL_w
-        pdb.set_trace()
         loss.backward(); optim.step(); optim.zero_grad()
         train_loss = loss.detach().item()/batch_y0.shape[0]/batch_t.shape[0]
         # run validation data
