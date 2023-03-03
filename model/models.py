@@ -89,7 +89,6 @@ class SSGP(torch.nn.Module):
     term2 = torch.diag(C).sum() / (self.sigma_0**2 / num * 2)
     term1_1 = torch.log(self.sigma_0**2 / num * 2) * num
     term1_2 = torch.logdet(C)
-    pdb.set_trace()
     return .5*( term1_1 - term1_2 + term2 + term3)
 
   def sampling_x0(self, x0):
